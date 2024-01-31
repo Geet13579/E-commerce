@@ -2,6 +2,7 @@
   "name": "cms_project",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Geet13579.github.io/E-commerce",
   "dependencies": {
     "@faker-js/faker": "^8.2.0",
     "@reduxjs/toolkit": "^1.9.7",
@@ -28,6 +29,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build" ,
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -48,5 +51,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
